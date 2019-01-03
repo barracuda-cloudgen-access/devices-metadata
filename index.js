@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-const list = require("../devices.json");
+const list = require("./devices.json");
 
 function getDeviceNameFromIdentifier(id) {
   return list[id];
