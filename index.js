@@ -6,7 +6,7 @@
 const list = require("./devices.json");
 
 function getDeviceNameFromIdentifier(id) {
-  return list[id];
+  return list[id].name;
 }
 
 module.exports.getDeviceNameFromIdentifier = getDeviceNameFromIdentifier;
