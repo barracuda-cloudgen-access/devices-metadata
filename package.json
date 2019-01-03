@@ -1,7 +1,7 @@
 {
-  "name": "@fyde/ios-device-list",
+  "name": "@fyde/devices-metadata",
   "version": "1.0.2",
-  "description": "A collection of Apple devices and their identifiers.",
+  "description": "A collection of devices indexed by their identifiers.",
   "main": "./lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib"

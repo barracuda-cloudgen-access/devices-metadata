@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-const list = require("../apple_devices.json");
+const list = require("../devices.json");
 
 export function getDeviceNameFromIdentifier(id) {
   return list[id];

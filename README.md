@@ -1,6 +1,6 @@
-# ios-device-list
+# Devices Metadata
 
-A collection of Apple devices and their identifiers.
+A collection of devices indexed by their identifiers.
 
 ## Sources
 
