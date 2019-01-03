@@ -2,17 +2,13 @@
   "name": "@fyde/devices-metadata",
   "version": "1.1.0",
   "description": "A collection of devices indexed by their identifiers.",
-  "main": "./lib/index.js",
-  "scripts": {
-    "build": "babel src --out-dir lib"
-  },
+  "main": "./index.js",
   "files": [
-    "lib",
-    "src"
+    "index.js"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fydeinc/ios-device-list.git"
+    "url": "git+https://github.com/fydeinc/devices-metadata.git"
   },
   "keywords": [
     "ios",
@@ -25,13 +21,7 @@
   "author": "Fyde, Inc.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fydeinc/ios-device-list/issues"
+    "url": "https://github.com/fydeinc/devices-metadata/issues"
   },
-  "homepage": "https://github.com/fydeinc/ios-device-list#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^1.7.0",
-    "babel-plugin-add-module-exports": "^1.0.0"
-  }
+  "homepage": "https://github.com/fydeinc/devices-metadata#readme"
 }
