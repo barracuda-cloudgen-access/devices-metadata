@@ -3,8 +3,12 @@
  * All rights reserved.
  */
 
-import list from "./apple_devices.json";
+const list = require("./apple_devices.json");
 
-export function getDeviceNameFromIdentifier(id) {
+function getDeviceNameFromIdentifier(id) {
   return list[id];
 }
+
+module.exports = {
+  getDeviceNameFromIdentifier
+};
