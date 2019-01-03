@@ -1,6 +1,6 @@
 {
   "name": "@fyde/ios-device-list",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A collection of Apple devices and their identifiers.",
   "main": "./lib/index.js",
   "scripts": {
