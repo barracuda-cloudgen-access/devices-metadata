@@ -6,7 +6,11 @@
 const list = require("./devices.json");
 
 function getDeviceNameFromIdentifier(id) {
-  return list[id].name;
+  const device = list[id];
+  if (!device) {
+    throw new Error("Unknown device identifier.");
+  }
+  return device.name;
 }
 
 module.exports.getDeviceNameFromIdentifier = getDeviceNameFromIdentifier;
