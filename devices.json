@@ -235,17 +235,17 @@
       "brand": "apple"
   },
   "iPad4,1": {
-      "name": "iPad AIR",
+      "name": "iPad Air",
       "category": "tablet",
       "brand": "apple"
   },
   "iPad4,2": {
-      "name": "iPad AIR",
+      "name": "iPad Air",
       "category": "tablet",
       "brand": "apple"
   },
   "iPad4,3": {
-      "name": "iPad AIR",
+      "name": "iPad Air",
       "category": "tablet",
       "brand": "apple"
   },
@@ -290,62 +290,62 @@
       "brand": "apple"
   },
   "iPad5,3": {
-      "name": "iPad AIR 2",
+      "name": "iPad Air 2",
       "category": "tablet",
       "brand": "apple"
   },
   "iPad5,4": {
-      "name": "iPad AIR 2",
+      "name": "iPad Air 2",
       "category": "tablet",
       "brand": "apple"
   },
   "iPad6,3": {
-      "name": "iPad PRO 9.7",
+      "name": "iPad Pro (9.7')",
       "category": "tablet",
       "brand": "apple"
   },
   "iPad6,4": {
-      "name": "iPad PRO 9.7",
+      "name": "iPad Pro (9.7')",
       "category": "tablet",
       "brand": "apple"
   },
   "iPad6,7": {
-      "name": "iPad PRO 12.9",
+      "name": "iPad Pro (12.9')",
       "category": "tablet",
       "brand": "apple"
   },
   "iPad6,8": {
-      "name": "iPad PRO 12.9",
+      "name": "iPad Pro (12.9')",
       "category": "tablet",
       "brand": "apple"
   },
   "iPad6,11": {
-      "name": "iPad (5th generation)",
+      "name": "iPad (5th gen)",
       "category": "tablet",
       "brand": "apple"
   },
   "iPad6,12": {
-      "name": "iPad (5th generation)",
+      "name": "iPad (5th gen)",
       "category": "tablet",
       "brand": "apple"
   },
   "iPad7,1": {
-      "name": "iPad PRO 12.9 (2nd Gen)",
+      "name": "iPad Pro (12.9') (2nd Gen)",
       "category": "tablet",
       "brand": "apple"
   },
   "iPad7,2": {
-      "name": "iPad PRO 12.9 (2nd Gen)",
+      "name": "iPad Pro (12.9') (2nd Gen)",
       "category": "tablet",
       "brand": "apple"
   },
   "iPad7,3": {
-      "name": "iPad PRO 10.5",
+      "name": "iPad Pro (10.5')",
       "category": "tablet",
       "brand": "apple"
   },
   "iPad7,4": {
-      "name": "iPad PRO 10.5",
+      "name": "iPad Pro (10.5')",
       "category": "tablet",
       "brand": "apple"
   },
@@ -365,22 +365,22 @@
     "brand": "apple"
 },
 "iPad8,2": {
-    "name": "iPad Pro (11)",
+    "name": "iPad Pro (11')",
     "category": "tablet",
     "brand": "apple"
 },
 "iPad8,3": {
-    "name": "iPad Pro (11)",
+    "name": "iPad Pro (11')",
     "category": "tablet",
     "brand": "apple"
 },
 "iPad8,4": {
-    "name": "iPad Pro (11)",
+    "name": "iPad Pro (11')",
     "category": "tablet",
     "brand": "apple"
 },
 "iPad8,5": {
-    "name": "iPad Pro (12.9) (3rd gen)",
+    "name": "iPad Pro (12.9') (3rd gen)",
     "category": "tablet",
     "brand": "apple"
 },
