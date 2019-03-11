@@ -3,18 +3,22 @@
  * All rights reserved.
  */
 
-const { getDeviceNameFromIdentifier } = require("../index");
+const { getDeviceDataFromIdentifier } = require("../index");
 
-describe("#getDeviceNameFromIdentifier", () => {
+describe("#getDeviceDataFromIdentifier", () => {
   describe("when identifier exists", () => {
-    it("returns the device name", () => {
-      expect(getDeviceNameFromIdentifier("iPhone10,3")).toEqual("iPhone X");
+    it("returns the device data", () => {
+      expect(getDeviceDataFromIdentifier("iPhone10,3")).toEqual({
+        name: "iPhone X",
+        category: "mobile",
+        brand: "apple"
+      });
     });
   });
 
   describe("when identifier does not exist", () => {
     it("throws an exception", () => {
-      expect(() => getDeviceNameFromIdentifier("unicorn")).toThrowError(
+      expect(() => getDeviceDataFromIdentifier("unicorn")).toThrowError(
         "Unknown device identifier."
       );
     });
