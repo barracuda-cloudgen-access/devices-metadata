@@ -1,6 +1,6 @@
 {
   "name": "@fyde/devices-metadata",
-  "version": "1.2.0",
+  "version": "1.3.1",
   "description": "A collection of devices indexed by their identifiers.",
   "main": "./index.js",
   "files": [
