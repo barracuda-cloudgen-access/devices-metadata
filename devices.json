@@ -384,6 +384,41 @@
     "category": "tablet",
     "brand": "apple"
   },
+  "iPad8,6": {
+    "name": "iPad Pro (12.9') (3rd gen)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad8,7": {
+    "name": "iPad Pro (12.9') (3rd gen)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad8,8": {
+    "name": "iPad Pro (12.9') (3rd gen)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad11,1": {
+    "name": "iPad mini (5th gen)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad11,2": {
+    "name": "iPad mini (5th gen)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad11,3": {
+    "name": "iPad Air (3rd gen)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad11,4": {
+    "name": "iPad Air (3rd gen)",
+    "category": "tablet",
+    "brand": "apple"
+  },
   "iPod1,1": {
     "name": "iPod Touch",
     "category": "music_player",
