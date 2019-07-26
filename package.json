@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/fydeinc/devices-metadata#readme",
   "devDependencies": {
-    "jest": "^23.6.0"
+    "jest": "^24.8.0"
   }
 }
