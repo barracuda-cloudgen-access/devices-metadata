@@ -374,6 +374,16 @@
     "category": "tablet",
     "brand": "apple"
   },
+  "iPad7,11": {
+    "name": "iPad (10.2') (7th gen) (Wi-Fi Only)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad7,12": {
+    "name": "iPad (10.2') (7th gen) (Wi-Fi/Cellular)",
+    "category": "tablet",
+    "brand": "apple"
+  },
   "iPad8,1": {
     "name": "iPad Pro (11')",
     "category": "tablet",
