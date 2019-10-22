@@ -164,6 +164,21 @@
     "category": "mobile",
     "brand": "apple"
   },
+  "iPhone12,1": {
+    "name": "iPhone 11",
+    "category": "mobile",
+    "brand": "apple"
+  },
+  "iPhone12,3": {
+    "name": "iPhone 11 Pro",
+    "category": "mobile",
+    "brand": "apple"
+  },
+  "iPhone12,5": {
+    "name": "iPhone 11 Pro Max",
+    "category": "mobile",
+    "brand": "apple"
+  },
   "iPad1,1": {
     "name": "iPad 1",
     "category": "tablet",
