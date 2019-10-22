@@ -164,6 +164,21 @@
     "category": "mobile",
     "brand": "apple"
   },
+  "iPhone12,1": {
+    "name": "iPhone 11",
+    "category": "mobile",
+    "brand": "apple"
+  },
+  "iPhone12,3": {
+    "name": "iPhone 11 Pro",
+    "category": "mobile",
+    "brand": "apple"
+  },
+  "iPhone12,5": {
+    "name": "iPhone 11 Pro Max",
+    "category": "mobile",
+    "brand": "apple"
+  },
   "iPad1,1": {
     "name": "iPad 1",
     "category": "tablet",
@@ -356,6 +371,16 @@
   },
   "iPad7,6": {
     "name": "iPad (6th gen)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad7,11": {
+    "name": "iPad (10.2') (7th gen) (Wi-Fi Only)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad7,12": {
+    "name": "iPad (10.2') (7th gen) (Wi-Fi/Cellular)",
     "category": "tablet",
     "brand": "apple"
   },
@@ -756,6 +781,16 @@
   },
   "iMac18,3": {
     "name": "iMac \"Core i7\" 4.2 27-Inch (5K, Mid-2017)",
+    "category": "laptop",
+    "brand": "apple"
+  },
+  "iMac19,2": {
+    "name": "iMac \"Core i7\" 3.2 21.5-Inch (4K, 2019)",
+    "category": "laptop",
+    "brand": "apple"
+  },
+  "iMac19,1": {
+    "name": "iMac \"Core i9\" 3.6 27-Inch (5K, 2019)",
     "category": "laptop",
     "brand": "apple"
   },
@@ -1175,12 +1210,17 @@
     "brand": "apple"
   },
   "MacBookPro15,2": {
-    "name": "MacBook Pro \"Core i7\" 2.7 13\" Touch/Mid-2018",
+    "name": "MacBook Pro \"Core i7\" 2.8 13\" Touch/2019",
     "category": "laptop",
     "brand": "apple"
   },
   "MacBookPro15,1": {
-    "name": "MacBook Pro \"Core i9\" 2.9 15\" Touch/Mid-2018",
+    "name": "MacBook Pro \"Core i9\" 2.4 15\" Touch/2019",
+    "category": "laptop",
+    "brand": "apple"
+  },
+  "MacBookPro15,3": {
+    "name": "MacBook Pro \"Core i9\" 2.4 15\" Touch/2019 Vega",
     "category": "laptop",
     "brand": "apple"
   },
