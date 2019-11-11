@@ -23,6 +23,34 @@ $ node script.js
   brand: 'apple' }
 ```
 
+## Build
+
+First, build the docker container locally:
+
+```
+$ docker build -t device-metadata .
+```
+
+Next, run the generation script (needs [docker](https://docker.com/)):
+
+```
+$ docker run -v "$PWD":/home/user/app device-metadata node scripts/crawl.js
+
+{
+  "i386": {
+    "name": "32-bit Simulator",
+    "category": "simulator",
+    "brand": "apple"
+  },
+  "x86_64": {
+    "name": "64-bit Simulator",
+    "category": "simulator",
+  ...
+```
+
+The script prints the generated JSON directly to **stdout**.
+All logs go to **stderr**.
+
 ## Sources
 
 List of sources we use to gather information about hardware models.
