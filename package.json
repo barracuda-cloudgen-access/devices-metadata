@@ -7,7 +7,8 @@
     "index.js"
   ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "generate": "node scripts/crawl.js > devices.json"
   },
   "repository": {
     "type": "git",
@@ -29,5 +30,9 @@
   "homepage": "https://github.com/fydeinc/devices-metadata#readme",
   "devDependencies": {
     "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "jsdom": "^15.2.1",
+    "node-fetch": "^2.6.0"
   }
 }

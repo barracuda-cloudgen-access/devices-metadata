@@ -1,0 +1,103 @@
+/**
+ * Copyright (c) Fyde, Inc. and contributors. All rights reserved.
+ * Licensed under the MIT license. See LICENSE file in the project root for details.
+ */
+
+const fetch = require('node-fetch');
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
+const computeCommonName = require('./computeCommonName')
+
+/**
+ * Builds list of devices with target format.
+ * When several models are found for the same device ID, store them all.
+ */
+async function buildDevices(total, category, getDeviceID, getDeviceName) {
+    const devices = {};
+    for (let i = 0; i < total; i = i + 1) {
+        const deviceID = getDeviceID(i)
+        const deviceName = getDeviceName(i)
+
+        if (['Pending', 'N/A'].includes(deviceID)) {
+            continue;
+        }
+
+        if (devices[deviceID]) {
+            if (devices[deviceID].name !== deviceName) {
+                if (devices[deviceID].names) {
+                    devices[deviceID].names.push(deviceName);
+                } else {
+                    devices[deviceID].names = [devices[deviceID].name, deviceName];
+                    delete devices[deviceID].name;
+                }
+            }
+        } else {
+            devices[deviceID] = {
+                name: deviceName,
+                category,
+                brand: "apple"
+            }
+        }
+    }
+
+    // For models that have several names, canonicalize
+    Object.keys(devices).forEach(device => {
+        if (!devices[device].names) {
+            return;
+        }
+        devices[device].name = computeCommonName(devices[device].names)
+        delete devices[device].names;
+    })
+    return devices;
+}
+
+async function getiOSDevices() {
+    const res = await fetch('https://api.ipsw.me/v4/devices')
+    const content = await res.json()
+
+    return buildDevices(content.length, 'mobile',
+        (i) => content[i].identifier,
+        (i) => content[i].name)
+}
+
+async function getMacOSDevices() {
+    const res = await fetch('https://everymac.com/systems/by_capability/mac-specs-by-machine-model-machine-id.html')
+    const content = await res.text()
+    const dom = new JSDOM(content);
+
+    const nameAll = dom.window.document.querySelectorAll("#contentcenter_specs_externalnav_noflip_2 > a");
+    const deviceIdAll = dom.window.document.querySelectorAll("#contentcenter_specs_externalnav_noflip_3 > a");
+
+    if (deviceIdAll.length !== nameAll.length) {
+        throw new Error('Cannot get macos devices count');
+    }
+
+    return buildDevices(nameAll.length, 'laptop',
+        (i) => deviceIdAll[i].textContent.replace('*', ''),
+        (i) => nameAll[i].textContent.replace('*', ''))
+}
+
+/**
+ * Main
+ */
+(async () => {
+    console.log(JSON.stringify({
+        i386: {
+            "name": "32-bit Simulator",
+            "category": "simulator",
+            "brand": "apple"
+        },
+        x86_64: {
+            "name": "64-bit Simulator",
+            "category": "simulator",
+            "brand": "apple"
+        },
+        ...await getiOSDevices(),
+        ...await getMacOSDevices()
+    }, null, 2))
+})().catch(e => {
+    console.error(e)
+    process.exit(1)
+})
+
+
