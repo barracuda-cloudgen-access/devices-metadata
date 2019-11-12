@@ -3,12 +3,12 @@
  * All rights reserved.
  */
 
-const list = require("./devices.json");
+const list = require('./devices.json');
 
 function getDeviceDataFromIdentifier(id) {
   const device = list[id];
   if (!device) {
-    throw new Error("Unknown device identifier.");
+    throw new Error('Unknown device identifier.');
   }
   return device;
 }
