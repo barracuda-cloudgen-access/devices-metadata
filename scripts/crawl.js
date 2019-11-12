@@ -9,11 +9,29 @@ const jsdom = require('jsdom');
 const { JSDOM } = jsdom;
 const computeCommonName = require('./computeCommonName');
 
+// Device prefix to category mappings
+const categoryMap = {
+  iPhone: 'mobile',
+  iPad: 'tablet',
+  Watch: 'watch',
+  iPod: 'music_player',
+  AppleTV: 'tv',
+  AudioAccessory: 'speaker',
+  PowerMac: 'desktop',
+  PowerBook: 'laptop',
+  iMac: 'desktop',
+  Macmini: 'desktop',
+  MacPro: 'desktop',
+  MacBook: 'laptop',
+  RackMac: 'rack',
+  Xserve: 'server',
+};
+
 /**
  * Builds list of devices with target format.
  * When several models are found for the same device ID, store them all.
  */
-async function buildDevices(total, category, getDeviceID, getDeviceName) {
+async function buildDevices(total, getDeviceID, getDeviceName) {
   const devices = {};
   for (let i = 0; i < total; i += 1) {
     const deviceID = getDeviceID(i);
@@ -34,6 +52,15 @@ async function buildDevices(total, category, getDeviceID, getDeviceName) {
         }
       }
     } else {
+      const modelPrefix = Object.keys(categoryMap).find(m =>
+        deviceID.startsWith(m),
+      );
+
+      const category = modelPrefix ? categoryMap[modelPrefix] : 'unknown';
+      if (category === 'unknown') {
+        console.error(`Warning: Unknown category for deviceID ${deviceID}`);
+      }
+
       devices[deviceID] = {
         name: deviceName,
         category,
@@ -59,7 +86,6 @@ async function getiOSDevices() {
 
   return buildDevices(
     content.length,
-    'mobile',
     i => content[i].identifier,
     i => content[i].name,
   );
@@ -85,7 +111,6 @@ async function getMacOSDevices() {
 
   return buildDevices(
     nameAll.length,
-    'laptop',
     i => deviceIdAll[i].textContent.replace('*', ''),
     i => nameAll[i].textContent.replace('*', ''),
   );
