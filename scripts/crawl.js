@@ -95,7 +95,6 @@ async function getMacOSDevices() {
  * Main
  */
 (async () => {
-  // eslint-disable-next-line no-console
   console.log(
     JSON.stringify(
       {
@@ -117,7 +116,6 @@ async function getMacOSDevices() {
     ),
   );
 })().catch(e => {
-  // eslint-disable-next-line no-console
   console.error(e);
   process.exit(1);
 });
