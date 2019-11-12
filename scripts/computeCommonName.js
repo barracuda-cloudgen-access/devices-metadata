@@ -19,7 +19,7 @@ module.exports = function computeCommonName(names) {
 
   // Splits string by spaces, taking into account quoted/with parenthesis words
   const explodedNames = names
-    .map(name => name.match(/\(([^\)]+)\)|"([^"]*)"|[^\s-]+/g))
+    .map(name => name.match(/\(([^)]+)\)|"([^"]*)"|[^\s-]+/g))
     .filter(rep => rep !== null);
   const maxExplodedNameLength = Math.max(
     ...explodedNames.map(name => name.length),
@@ -41,7 +41,7 @@ module.exports = function computeCommonName(names) {
     if (repsArr.length === 1) {
       // If only one entry, use it
       out.push(first);
-    } else if (repsArr.every(rep => rep.match(/^["\(](.*?)["\)]$/))) {
+    } else if (repsArr.every(rep => rep.match(/^["(](.*?)[")]$/))) {
       // If word is wrapped between quotes/parenthesis
       const startChar = first[0];
       const endChar = first[first.length - 1];

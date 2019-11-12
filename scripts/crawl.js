@@ -20,6 +20,7 @@ async function buildDevices(total, category, getDeviceID, getDeviceName) {
     const deviceName = getDeviceName(i);
 
     if (['Pending', 'N/A'].includes(deviceID)) {
+      // eslint-disable-next-line no-continue
       continue;
     }
 
@@ -94,6 +95,7 @@ async function getMacOSDevices() {
  * Main
  */
 (async () => {
+  // eslint-disable-next-line no-console
   console.log(
     JSON.stringify(
       {
@@ -115,6 +117,7 @@ async function getMacOSDevices() {
     ),
   );
 })().catch(e => {
+  // eslint-disable-next-line no-console
   console.error(e);
   process.exit(1);
 });
