@@ -1109,6 +1109,11 @@
     "category": "laptop",
     "brand": "apple"
   },
+  "MacBookAir8,2": {
+    "name": "MacBook Air \"Core i5\" 1.6 13\" (True Tone, 2019)",
+    "category": "laptop",
+    "brand": "apple"
+  },
   "MacBookPro1,1": {
     "category": "laptop",
     "brand": "apple",
@@ -1288,6 +1293,16 @@
     "category": "laptop",
     "brand": "apple",
     "name": "MacBook Pro \"Core i7/i9\" 2.6/2.9/2.3/2.4 15\" Touch/2018/Touch/2019 Vega"
+  },
+  "MacBookPro15,4": {
+    "category": "laptop",
+    "brand": "apple",
+    "name": "MacBook Pro \"Core i5/i7\" 1.4/1.7 13\" Touch/2019 2 TB 3"
+  },
+  "MacBookPro16,1": {
+    "category": "laptop",
+    "brand": "apple",
+    "name": "MacBook Pro \"Core i7/i9\" 2.6/2.3/2.4 16\" 2019 (Scissor)"
   },
   "PowerMac1,2": {
     "category": "desktop",
