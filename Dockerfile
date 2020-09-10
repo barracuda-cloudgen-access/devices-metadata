@@ -1,5 +1,5 @@
 
-FROM node:8-stretch
+FROM node:lts-stretch
 
 ARG DUMB_INIT_VERSION=1.2.1
 ARG USER=user
