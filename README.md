@@ -8,9 +8,9 @@ Currently, we only have Apple hardware in this list.
 Import the `getDeviceDataFromIdentifier` from `@fyde/devices-metadata` and use it like so:
 
 ```js
-const { getDeviceDataFromIdentifier } = require('@fyde/devices-metadata');
+const { getDeviceDataFromIdentifier } = require("@fyde/devices-metadata");
 
-const res = getDeviceDataFromIdentifier('iPad11,2');
+const res = getDeviceDataFromIdentifier("iPad11,2");
 console.log(res);
 ```
 
@@ -57,9 +57,9 @@ List of sources we use to gather information about hardware models.
 
 ### Apple hardware
 
-* https://www.theiphonewiki.com/wiki/Models
-* https://en.wikipedia.org/wiki/List_of_iOS_devices
-* https://developer.apple.com/documentation/uikit/uidevice
+- https://www.theiphonewiki.com/wiki/Models
+- https://en.wikipedia.org/wiki/List_of_iOS_devices
+- https://developer.apple.com/documentation/uikit/uidevice
 
 ## License
 

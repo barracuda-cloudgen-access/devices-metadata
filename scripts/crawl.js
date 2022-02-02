@@ -3,28 +3,28 @@
  * Licensed under the MIT license. See LICENSE file in the project root for details.
  */
 
-const fetch = require('node-fetch');
-const jsdom = require('jsdom');
+const fetch = require("node-fetch");
+const jsdom = require("jsdom");
 
 const { JSDOM } = jsdom;
-const computeCommonName = require('./computeCommonName');
+const computeCommonName = require("./computeCommonName");
 
 // Device prefix to category mappings
 const categoryMap = {
-  iPhone: 'mobile',
-  iPad: 'tablet',
-  Watch: 'watch',
-  iPod: 'music_player',
-  AppleTV: 'tv',
-  AudioAccessory: 'speaker',
-  PowerMac: 'desktop',
-  PowerBook: 'laptop',
-  iMac: 'desktop',
-  Macmini: 'desktop',
-  MacPro: 'desktop',
-  MacBook: 'laptop',
-  RackMac: 'rack',
-  Xserve: 'server',
+  iPhone: "mobile",
+  iPad: "tablet",
+  Watch: "watch",
+  iPod: "music_player",
+  AppleTV: "tv",
+  AudioAccessory: "speaker",
+  PowerMac: "desktop",
+  PowerBook: "laptop",
+  iMac: "desktop",
+  Macmini: "desktop",
+  MacPro: "desktop",
+  MacBook: "laptop",
+  RackMac: "rack",
+  Xserve: "server",
 };
 
 /**
@@ -37,7 +37,7 @@ async function buildDevices(total, getDeviceID, getDeviceName) {
     const deviceID = getDeviceID(i);
     const deviceName = getDeviceName(i);
 
-    if (['Pending', 'N/A'].includes(deviceID)) {
+    if (["Pending", "N/A"].includes(deviceID)) {
       // eslint-disable-next-line no-continue
       continue;
     }
@@ -52,25 +52,25 @@ async function buildDevices(total, getDeviceID, getDeviceName) {
         }
       }
     } else {
-      const modelPrefix = Object.keys(categoryMap).find(m =>
-        deviceID.startsWith(m),
+      const modelPrefix = Object.keys(categoryMap).find((m) =>
+        deviceID.startsWith(m)
       );
 
-      const category = modelPrefix ? categoryMap[modelPrefix] : 'unknown';
-      if (category === 'unknown') {
+      const category = modelPrefix ? categoryMap[modelPrefix] : "unknown";
+      if (category === "unknown") {
         console.error(`Warning: Unknown category for deviceID ${deviceID}`);
       }
 
       devices[deviceID] = {
         name: deviceName,
         category,
-        brand: 'apple',
+        brand: "apple",
       };
     }
   }
 
   // For models that have several names, canonicalize
-  Object.keys(devices).forEach(device => {
+  Object.keys(devices).forEach((device) => {
     if (!devices[device].names) {
       return;
     }
@@ -81,38 +81,38 @@ async function buildDevices(total, getDeviceID, getDeviceName) {
 }
 
 async function getiOSDevices() {
-  const res = await fetch('https://api.ipsw.me/v4/devices');
+  const res = await fetch("https://api.ipsw.me/v4/devices");
   const content = await res.json();
 
   return buildDevices(
     content.length,
-    i => content[i].identifier,
-    i => content[i].name,
+    (i) => content[i].identifier,
+    (i) => content[i].name
   );
 }
 
 async function getMacOSDevices() {
   const res = await fetch(
-    'https://everymac.com/systems/by_capability/mac-specs-by-machine-model-machine-id.html',
+    "https://everymac.com/systems/by_capability/mac-specs-by-machine-model-machine-id.html"
   );
   const content = await res.text();
   const dom = new JSDOM(content);
 
   const nameAll = dom.window.document.querySelectorAll(
-    '#contentcenter_specs_externalnav_noflip_2 > a',
+    "#contentcenter_specs_externalnav_noflip_2 > a"
   );
   const deviceIdAll = dom.window.document.querySelectorAll(
-    '#contentcenter_specs_externalnav_noflip_3 > a',
+    "#contentcenter_specs_externalnav_noflip_3 > a"
   );
 
   if (deviceIdAll.length !== nameAll.length) {
-    throw new Error('Cannot get macos devices count');
+    throw new Error("Cannot get macos devices count");
   }
 
   return buildDevices(
     nameAll.length,
-    i => deviceIdAll[i].textContent.replace('*', ''),
-    i => nameAll[i].textContent.replace('*', ''),
+    (i) => deviceIdAll[i].textContent.replace("*", ""),
+    (i) => nameAll[i].textContent.replace("*", "")
   );
 }
 
@@ -124,23 +124,23 @@ async function getMacOSDevices() {
     JSON.stringify(
       {
         i386: {
-          name: '32-bit Simulator',
-          category: 'simulator',
-          brand: 'apple',
+          name: "32-bit Simulator",
+          category: "simulator",
+          brand: "apple",
         },
         x86_64: {
-          name: '64-bit Simulator',
-          category: 'simulator',
-          brand: 'apple',
+          name: "64-bit Simulator",
+          category: "simulator",
+          brand: "apple",
         },
         ...(await getiOSDevices()),
         ...(await getMacOSDevices()),
       },
       null,
-      2,
-    ),
+      2
+    )
   );
-})().catch(e => {
+})().catch((e) => {
   console.error(e);
   process.exit(1);
 });

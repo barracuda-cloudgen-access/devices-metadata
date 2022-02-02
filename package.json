@@ -7,7 +7,7 @@
     "index.js"
   ],
   "scripts": {
-    "lint": "eslint .",
+    "lint": "prettier --check .",
     "test": "jest",
     "generate": "node scripts/crawl.js > devices.json"
   },
@@ -30,8 +30,8 @@
   },
   "homepage": "https://github.com/fydeinc/devices-metadata#readme",
   "devDependencies": {
-    "eslint-config-fyde": "fyde/eslint-config-fyde#v2.0.1",
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "prettier": "^2.5.1"
   },
   "dependencies": {
     "jsdom": "^15.2.1",
