@@ -1,0 +1,8 @@
+* @oNaiPs
+
+# Folder specific
+/.github @barracuda-cloudgen-access/sre
+
+# Filetype specific
+dockerfile* @barracuda-cloudgen-access/sre
+Dockerfile* @barracuda-cloudgen-access/sre
