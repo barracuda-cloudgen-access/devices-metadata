@@ -1,5 +1,5 @@
 {
-  "name": "@fyde/devices-metadata",
+  "name": "@barracuda-cloudgen-access/devices-metadata",
   "version": "1.5.2",
   "description": "A collection of devices indexed by their identifiers.",
   "main": "./index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fydeinc/devices-metadata.git"
+    "url": "git+https://github.com/barracuda-cloudgen-access/devices-metadata.git"
   },
   "keywords": [
     "ios",
@@ -23,12 +23,12 @@
     "iwatch",
     "devices"
   ],
-  "author": "Fyde, Inc.",
+  "author": "Barracuda Networks, Inc.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fydeinc/devices-metadata/issues"
+    "url": "https://github.com/barracuda-cloudgen-access/devices-metadata/issues"
   },
-  "homepage": "https://github.com/fydeinc/devices-metadata#readme",
+  "homepage": "https://github.com/barracuda-cloudgen-access/devices-metadata#readme",
   "devDependencies": {
     "jest": "^24.8.0",
     "prettier": "^2.5.1"

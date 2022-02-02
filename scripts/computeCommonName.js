@@ -1,5 +1,5 @@
 /**
- * Copyright (c) Fyde, Inc. and contributors. All rights reserved.
+ * Copyright (c) Barracuda Networks, Inc. and contributors. All rights reserved.
  * Licensed under the MIT license. See LICENSE file in the project root for details.
  */
 
