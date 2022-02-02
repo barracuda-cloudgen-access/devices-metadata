@@ -714,6 +714,181 @@
     "category": "unknown",
     "brand": "apple"
   },
+  "iPad13,1": {
+    "name": "iPad Air 4 (WiFi)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad11,6": {
+    "name": "iPad 8 (WiFi)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad11,7": {
+    "name": "iPad 8 (Cellular)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPhone13,2": {
+    "name": "iPhone 12",
+    "category": "mobile",
+    "brand": "apple"
+  },
+  "iPad13,2": {
+    "name": "iPad Air 4 (Cellular)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPhone13,1": {
+    "name": "iPhone 12 mini",
+    "category": "mobile",
+    "brand": "apple"
+  },
+  "iPhone13,4": {
+    "name": "iPhone 12 Pro Max",
+    "category": "mobile",
+    "brand": "apple"
+  },
+  "iPhone13,3": {
+    "name": "iPhone 12 Pro",
+    "category": "mobile",
+    "brand": "apple"
+  },
+  "AudioAccessory5,1": {
+    "name": "HomePod mini",
+    "category": "speaker",
+    "brand": "apple"
+  },
+  "MacBookPro17,1": {
+    "name": "MacBook Pro 13-Inch \"M1\" 8-Core 3.2 (2020)",
+    "category": "laptop",
+    "brand": "apple"
+  },
+  "MacBookAir10,1": {
+    "category": "laptop",
+    "brand": "apple",
+    "name": "MacBook Air \"M1\" 8 Core 3.2/7/3.2/8 Core GPU 13\""
+  },
+  "ADP3,2": {
+    "name": "Mac mini Developer Transition Kit (DTK)",
+    "category": "unknown",
+    "brand": "apple"
+  },
+  "Macmini9,1": {
+    "name": "Mac mini \"M1\" 8-Core 3.2 (2020)",
+    "category": "desktop",
+    "brand": "apple"
+  },
+  "iPad13,4": {
+    "name": "iPad Pro (11-inch) (3rd generation)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad13,5": {
+    "name": "iPad Pro (11-inch) (3rd generation)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad13,9": {
+    "name": "iPad Pro (12.9-inch) (5th generation)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad13,11": {
+    "name": "iPad Pro (12.9-inch) (5th generation)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad13,8": {
+    "name": "iPad Pro (12.9-inch) (5th generation)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad13,10": {
+    "name": "iPad Pro (12.9-inch) (5th generation)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad13,7": {
+    "name": "iPad Pro (11-inch) (3rd generation)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad13,6": {
+    "name": "iPad Pro (11-inch) (3rd generation)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iMac21,1": {
+    "name": "iMac 24-Inch \"M1\" 8-Core 3.2/8-Core GPU/4 Ports",
+    "category": "desktop",
+    "brand": "apple"
+  },
+  "iMac21,2": {
+    "name": "iMac 24-Inch \"M1\" 8-Core 3.2/7-Core GPU/2 Ports",
+    "category": "desktop",
+    "brand": "apple"
+  },
+  "iPad12,1": {
+    "name": "iPad 9 (WiFi)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad12,2": {
+    "name": "iPad 9 (Cellular)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad14,1": {
+    "name": "iPad Mini 6 (WiFi)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPad14,2": {
+    "name": "iPad Mini 6 (Cellular)",
+    "category": "tablet",
+    "brand": "apple"
+  },
+  "iPhone14,2": {
+    "name": "iPhone 13 Pro",
+    "category": "mobile",
+    "brand": "apple"
+  },
+  "iPhone14,3": {
+    "name": "iPhone 13 Pro Max",
+    "category": "mobile",
+    "brand": "apple"
+  },
+  "iPhone14,4": {
+    "name": "iPhone 13 mini",
+    "category": "mobile",
+    "brand": "apple"
+  },
+  "iPhone14,5": {
+    "name": "iPhone 13",
+    "category": "mobile",
+    "brand": "apple"
+  },
+  "MacBookPro18,2": {
+    "category": "laptop",
+    "brand": "apple",
+    "name": "MacBook Pro 16 Inch \"M1 Max\" 10 Core/24/Core/32 Core (2021)"
+  },
+  "MacBookPro18,3": {
+    "category": "laptop",
+    "brand": "apple",
+    "name": "MacBook Pro 14 Inch \"M1 Pro\" 8/10 Core/14/Core/16 Core (2021)"
+  },
+  "MacBookPro18,1": {
+    "name": "MacBook Pro 16-Inch \"M1 Pro\" 10-Core/16-Core (2021)",
+    "category": "laptop",
+    "brand": "apple"
+  },
+  "MacBookPro18,4": {
+    "category": "laptop",
+    "brand": "apple",
+    "name": "MacBook Pro 14 Inch \"M1 Max\" 10 Core/24/Core/32 Core (2021)"
+  },
   "PowerMac4,4": {
     "category": "desktop",
     "brand": "apple",
@@ -908,6 +1083,16 @@
     "category": "desktop",
     "brand": "apple",
     "name": "iMac 27 Inch \"Core i5/i9\" 3.0/3.1/3.7/3.6 (5K, 2019)"
+  },
+  "iMac20,1": {
+    "category": "desktop",
+    "brand": "apple",
+    "name": "iMac 27 Inch \"Core i5/i7/i9\" 3.1/3.3/3.8/3.6 (5K, 2020)"
+  },
+  "iMac20,2": {
+    "category": "desktop",
+    "brand": "apple",
+    "name": "iMac 27 Inch \"Core i7/i9\" 3.8/3.6 (5K, 2020; 5700/XT)"
   },
   "iMac,1": {
     "category": "desktop",
@@ -1297,12 +1482,12 @@
   "MacBookPro16,3": {
     "category": "laptop",
     "brand": "apple",
-    "name": "MacBook Pro 13 Inch \"Core i5/i7\" 1.4/1.7 2020 2 TB 3 (Scissor)"
+    "name": "MacBook Pro 13 Inch \"Core i5/i7\" 1.4/1.7 2020 2 TB 3"
   },
   "MacBookPro16,2": {
     "category": "laptop",
     "brand": "apple",
-    "name": "MacBook Pro 13 Inch \"Core i5/i7\" 2.0/2.3 2020 4 TB 3 (Scissor)"
+    "name": "MacBook Pro 13 Inch \"Core i5/i7\" 2.0/2.3 2020 4 TB 3"
   },
   "MacBookPro1,1": {
     "category": "laptop",
@@ -1402,7 +1587,12 @@
   "MacBookPro16,1": {
     "category": "laptop",
     "brand": "apple",
-    "name": "MacBook Pro 16 Inch \"Core i7/i9\" 2.6/2.3/2.4 2019 (Scissor)"
+    "name": "MacBook Pro 16 Inch \"Core i7/i9\" 2.6/2.3/2.4 2019"
+  },
+  "MacBookPro16,4": {
+    "category": "laptop",
+    "brand": "apple",
+    "name": "MacBook Pro 16 Inch \"Core i7/i9\" 2.6/2.3/2.4 2019 5600M"
   },
   "MacBookPro1,2": {
     "name": "MacBook Pro 17-Inch \"Core Duo\" 2.16",
