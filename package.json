@@ -35,6 +35,6 @@
   },
   "dependencies": {
     "jsdom": "^19.0.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^3.2.4"
   }
 }
