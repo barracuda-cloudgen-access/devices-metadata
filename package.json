@@ -34,7 +34,7 @@
     "prettier": "^2.5.1"
   },
   "dependencies": {
-    "jsdom": "^19.0.0",
+    "jsdom": "^20.0.0",
     "node-fetch": "^2.6.0"
   }
 }
