@@ -31,7 +31,7 @@
   "homepage": "https://github.com/fydeinc/devices-metadata#readme",
   "devDependencies": {
     "jest": "^27.4.7",
-    "prettier": "^2.5.1"
+    "prettier": "^2.8.0"
   },
   "dependencies": {
     "jsdom": "^19.0.0",
