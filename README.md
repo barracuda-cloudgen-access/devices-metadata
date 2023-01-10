@@ -5,10 +5,12 @@ Currently, we only have Apple hardware in this list.
 
 ## Usage
 
-Import the `getDeviceDataFromIdentifier` from `@fyde/devices-metadata` and use it like so:
+Import the `getDeviceDataFromIdentifier` from `@barracuda-cloudgen-access/devices-metadata` and use it like so:
 
 ```js
-const { getDeviceDataFromIdentifier } = require("@fyde/devices-metadata");
+const {
+  getDeviceDataFromIdentifier,
+} = require("@barracuda-cloudgen-access/devices-metadata");
 
 const res = getDeviceDataFromIdentifier("iPad11,2");
 console.log(res);

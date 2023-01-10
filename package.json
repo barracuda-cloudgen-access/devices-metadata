@@ -1,19 +1,17 @@
 {
-  "name": "@fyde/devices-metadata",
-  "version": "1.4.1",
+  "name": "@barracuda-cloudgen-access/devices-metadata",
+  "version": "1.7.0",
   "description": "A collection of devices indexed by their identifiers.",
-  "main": "./index.js",
-  "files": [
-    "index.js"
-  ],
+  "main": "./lib/index.ts",
   "scripts": {
     "lint": "prettier --check .",
-    "test": "jest",
-    "generate": "node scripts/crawl.js > devices.json"
+    "test": "prettier --check . && tsc --noEmit && jest",
+    "getAppleDevices": "node scripts/getAppleDevices.js > lib/devices/apple/data.json"
   },
+  "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fydeinc/devices-metadata.git"
+    "url": "git+https://github.com/barracuda-cloudgen-access/devices-metadata.git"
   },
   "keywords": [
     "ios",
@@ -23,18 +21,50 @@
     "iwatch",
     "devices"
   ],
-  "author": "Fyde, Inc.",
+  "author": "Barracuda Networks, Inc.",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fydeinc/devices-metadata/issues"
+    "url": "https://github.com/barracuda-cloudgen-access/devices-metadata/issues"
   },
-  "homepage": "https://github.com/fydeinc/devices-metadata#readme",
+  "homepage": "https://github.com/barracuda-cloudgen-access/devices-metadata#readme",
   "devDependencies": {
+    "@tsconfig/node16": "1.0.3",
+    "@types/jest": "29.2.5",
     "jest": "^27.4.7",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "ts-jest": "29.0.3",
+    "typescript": "4.9.4"
   },
   "dependencies": {
     "jsdom": "^19.0.0",
     "node-fetch": "^2.6.0"
+  },
+  "jest": {
+    "bail": 3,
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "./lib/**/*.ts"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/__tests__/"
+    ],
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "vendor/.*"
+    ],
+    "testRegex": [
+      "/__tests__/.*\\.(test|spec)\\.[jt]sx?$"
+    ],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest",
+      "^.+\\.tsx?$": [
+        "ts-jest",
+        {
+          "diagnostics": false
+        }
+      ]
+    },
+    "transformIgnorePatterns": [],
+    "verbose": true
   }
 }
