@@ -2,8 +2,9 @@
   "name": "@barracuda-cloudgen-access/devices-metadata",
   "version": "1.7.0",
   "description": "A collection of devices indexed by their identifiers.",
-  "main": "./lib/index.ts",
+  "main": "./dist/index.js",
   "scripts": {
+    "prepare": "tsc",
     "lint": "prettier --check .",
     "test": "prettier --check . && tsc --noEmit && jest",
     "getAppleDevices": "node scripts/getAppleDevices.js > lib/devices/apple/data.json"
