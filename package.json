@@ -3,6 +3,9 @@
   "version": "1.7.0",
   "description": "A collection of devices indexed by their identifiers.",
   "main": "./dist/index.js",
+  "exports": {
+    "default": "./lib/index.ts"
+  },
   "scripts": {
     "prepare": "tsc",
     "lint": "prettier --check .",
