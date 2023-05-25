@@ -41,6 +41,7 @@
     "jsdom": "^19.0.0",
     "node-fetch": "^2.6.0"
   },
+  "packageManager": "pnpm@8.5.1",
   "jest": {
     "bail": 3,
     "collectCoverage": false,
