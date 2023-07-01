@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/barracuda-cloudgen-access/devices-metadata#readme",
   "devDependencies": {
-    "@tsconfig/node16": "1.0.3",
+    "@tsconfig/node16": "16.1.0",
     "@types/jest": "29.2.5",
     "jest": "^27.4.7",
     "prettier": "^2.5.1",

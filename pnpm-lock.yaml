@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 devDependencies:
   '@tsconfig/node16':
-    specifier: 1.0.3
-    version: 1.0.3
+    specifier: 16.1.0
+    version: 16.1.0
   '@types/jest':
     specifier: 29.2.5
     version: 29.2.5
@@ -652,8 +652,8 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /@tsconfig/node16@1.0.3:
-    resolution: {integrity: sha512-yOlFc+7UtL/89t2ZhjPvvB/DeAr3r+Dq58IgzsFkOAvVC6NMJXmCGjbptdXdR9qsX7pKcTL+s87FtYREi2dEEQ==}
+  /@tsconfig/node16@16.1.0:
+    resolution: {integrity: sha512-cfwhqrdZEKS+Iqu1OPDwmKsOV/eo7q4sPhWzOXc1rU77nnPFV3+77yPg8uKQ2e8eir6mERCvrKnd+EGa4qo4bQ==}
     dev: true
 
   /@types/babel__core@7.20.0:
